@@ -21,3 +21,5 @@ python .\ransom_setting.py --self-test
 if ($LASTEXITCODE -ne 0) { throw "Settings source self-test failed" }
 python .\honeypot_hotkey_test.py
 if ($LASTEXITCODE -ne 0) { throw "Honeypot/hotkey regression test failed" }
+
+python -m PyInstaller `
