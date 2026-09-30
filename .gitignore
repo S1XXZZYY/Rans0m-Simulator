@@ -1,0 +1,32 @@
+# Python runtime caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test and packaging output (recreated locally by build_exe.ps1)
+build/
+build_*/
+release/
+release_*/
+legacy_releases/
+*.spec.bak
+
+# Local diagnostics
+.pytest_cache/
+*.log
+qa_temp/
+
+# Editor and OS metadata
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# Clean source exports, isolated publication checkout and local environments
+source_exports/
+.venv/
+.env
+*.pem
+*.key
+# Streamlit
+.streamlit/secrets.toml
