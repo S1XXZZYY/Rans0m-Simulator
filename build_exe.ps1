@@ -23,3 +23,9 @@ python .\honeypot_hotkey_test.py
 if ($LASTEXITCODE -ne 0) { throw "Honeypot/hotkey regression test failed" }
 
 python -m PyInstaller `
+    --noconfirm `
+    --clean `
+    --distpath "$releaseDir" `
+    --workpath "$projectDir\build" `
+    "$projectDir\ransom.spec"
+if ($LASTEXITCODE -ne 0) { throw "PyInstaller build failed" }
