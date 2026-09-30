@@ -24,9 +24,7 @@ Desktop.ini
 
 # Clean source exports, isolated publication checkout and local environments
 source_exports/
-.venv/
+.venv.
 .env
 *.pem
 *.key
-# Streamlit
-.streamlit/secrets.toml
